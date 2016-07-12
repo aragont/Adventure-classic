@@ -6,8 +6,8 @@
 /*     m         message */
 
 /*  vocabulary: */
-/*     common /vocab/ ktab(vocw),      % ç¨á«  - §­ ç¥­¨ï á«®¢ */
-/*                    atab(vocw)       % á«®¢  - ¯® 4 ¡ãª¢ë */
+/*     common /vocab/ ktab(vocw),      % Ñ‡Ð¸ÑÐ»Ð° - Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ ÑÐ»Ð¾Ð² */
+/*                    atab(vocw)       % ÑÐ»Ð¾Ð²Ð° - Ð¿Ð¾ 4 Ð±ÑƒÐºÐ²Ñ‹ */
 
 #include "adv_ext.h"
 
@@ -30,12 +30,12 @@ ivocab() {
 		kword=mm+(specwr*1000);
 		mesimp=mesimp+1;
 	    } else {
-		printf("\n%s%.10s\n","­¥¢¥à­ë© ¬ àª¥à: ",_line); fatal();
+		printf("\n%s%.10s\n","Ð½ÐµÐ²ÐµÑ€Ð½Ñ‹Ð¹ Ð¼Ð°Ñ€ÐºÐµÑ€: ",_line); fatal();
 	    }
 	    p=4                                /* read list of words */;
 	    while(getwrd()) {
 		if( vocab(_word) >= 0 ) {
-		    printf("\n%s%.4s\n","¤¢ ¦¤ë ®¯à¥¤¥«¥­®: ",_word);
+		    printf("\n%s%.4s\n","Ð´Ð²Ð°Ð¶Ð´Ñ‹ Ð¾Ð¿Ñ€ÐµÐ´ÐµÐ»ÐµÐ½Ð¾: ",_word);
 		    fatal();
 		}
 		nvoc=nvoc+1;

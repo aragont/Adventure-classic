@@ -5,7 +5,7 @@
 /* format: < (condition) 0 (action) 0 > 0 */
 /* */
 /* inp: indx   - start address for condition */
-/*      object - Æ°'ekt §´Ô ™Æ‚Æ‡Æ£Æ Ø‡Æ¢•‡Ô‚Ï „·´Æ¢®Ô */
+/*      object - –æ–±'ekt –¥–ª—è –∫–æ—Ç–æ—Ä–æ–≥–æ –ø—Ä–æ–≤–µ—Ä—è—Ç—å —É—Å–ª–æ–≤–∏—è */
 /* out: true if one of (condition) is satisfied */
 
 #include "..\common\advexter.h"
@@ -21,17 +21,17 @@ begin:
     iniget(indx);
 
 L2000:
-   for(;;) {                         /* Ø‡Æ¢•‡™† ·´•§„ÓÈ•£Æ „·´Æ¢®Ô */
+   for(;;) {                         /* –ø—Ä–æ–≤–µ—Ä–∫–∞ —Å–ª–µ–¥—É—é—â–µ–≥–æ —É—Å–ª–æ–≤–∏—è */
    cmnd=get();
    if( cmnd==0 ) break;
         obimpl=object;
 
-        for(;;) {                              /* Ø‡Æ¢•‡™† „·´Æ¢®© */
-            if( cmnd==0 )  goto L5000;     /*     „·´Æ¢†Ô ¢ÎØÆ´≠•≠Î */
+        for(;;) {                              /* –ø—Ä–æ–≤–µ—Ä–∫–∞ —É—Å–ª–æ–≤–∏–π */
+            if( cmnd==0 )  goto L5000;     /*     —É—Å–ª–æ–≤–∞—è –≤—ã–ø–æ–ª–Ω–µ–Ω—ã */
 
-            kod=((cmnd)%(isobj))              /*  ß†£‡„ß®´ ™Æ§ „·´Æ¢®Ô */;
-            ntflag = (cmnd/not != 0)        /*  ß†£‡„ß®´ +/- ‰´†£ */;
-            obj=obimpl                      /*  ß†£‡„ß®´ Æ°"ekt */;
+            kod=((cmnd)%(isobj))              /*  –∑–∞–≥—Ä—É–∑–∏–ª –∫–æ–¥ —É—Å–ª–æ–≤–∏—è */;
+            ntflag = (cmnd/not != 0)        /*  –∑–∞–≥—Ä—É–∑–∏–ª +/- —Ñ–ª–∞–≥ */;
+            obj=obimpl                      /*  –∑–∞–≥—Ä—É–∑–∏–ª –æ–±"ekt */;
             if( (cmnd%not)/isobj != 0 )  obj=get();
 
 
@@ -51,7 +51,7 @@ L2000:
             }
             goto L13;
 
-L1:         obimpl=obj                           /* Æ°"ekt=ß†§†≠≠Æ¨„? */;
+L1:         obimpl=obj                           /* –æ–±"ekt=–∑–∞–¥–∞–Ω–Ω–æ–º—É? */;
             condit = obj==object;
             goto L100;
 
@@ -104,20 +104,20 @@ L100:
             cmnd=get();
         }
 
-        do {                        /* „·´Æ¢®• he ¢ÎØÆ´≠•≠Æ ==> */
-        } while( get()!=0 );          /*      ·™†≠®‡Æ¢†‚Ï „·´Æ¢®• */
+        do {                        /* —É—Å–ª–æ–≤–∏–µ he –≤—ã–ø–æ–ª–Ω–µ–Ω–æ ==> */
+        } while( get()!=0 );          /*      —Å–∫–∞–Ω–∏—Ä–æ–≤–∞—Ç—å —É—Å–ª–æ–≤–∏–µ */
         do {
-        } while( get()!=0 );             /*      ·™†≠®‡Æ¢†‚Ï §•©·‚¢®• */
+        } while( get()!=0 );             /*      —Å–∫–∞–Ω–∏—Ä–æ–≤–∞—Ç—å –¥–µ–π—Å—Ç–≤–∏–µ */
 
     }
-    return( 0 );                           /* ØÆ§Â. „·´Æ¢®• he ≠†©§•≠Æ */
+    return( 0 );                           /* –ø–æ–¥—Ö. —É—Å–ª–æ–≤–∏–µ he –Ω–∞–π–¥–µ–Ω–æ */
 
 L5000:
     for(;;) {
         cmnd=get();
     if( cmnd==0 ) break;
-        kod=cmnd%isobj                     /*  ß†£‡„ß®´ ™Æ§ „·´Æ¢®Ô */;
-        obj=obimpl                              /*  ß†£‡„ß®´ Æ°Ï•™‚ */;
+        kod=cmnd%isobj                     /*  –∑–∞–≥—Ä—É–∑–∏–ª –∫–æ–¥ —É—Å–ª–æ–≤–∏—è */;
+        obj=obimpl                              /*  –∑–∞–≥—Ä—É–∑–∏–ª –æ–±—å–µ–∫—Ç */;
         if( (cmnd%not)/isobj != 0 )  obj=get();
 
         switch( kod) {
@@ -168,12 +168,12 @@ L110:   prop(obj)=prop(obj)+1                    /* add 1 to prop(obj) */;
 L111:   indobj();                              /* indicate objects */
         goto L200;
 
-L112:   object = obj;                   /* „™†ß†≠®• Æ°Í•™‚† ØÆ „¨Æ´Á†≠®Ó */
+L112:   object = obj;                   /* —É–∫–∞–∑–∞–Ω–∏–µ –æ–±—ä–µ–∫—Ç–∞ –ø–æ —É–º–æ–ª—á–∞–Ω–∏—é */
         goto begin;
 
 L200:;
     }
-    if( actfla==1 )  goto L2000;              /* ÆÊ•≠®‚Ï ·´•§.„·´Æ¢®• */
+    if( actfla==1 )  goto L2000;              /* –æ—Ü–µ–Ω–∏—Ç—å —Å–ª–µ–¥.—É—Å–ª–æ–≤–∏–µ */
 
     return( 1 );                                 /* ok. all is ready */
 }

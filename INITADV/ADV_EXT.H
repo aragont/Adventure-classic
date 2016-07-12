@@ -1,4 +1,4 @@
-/* INCLUDE-FILE „‹Ÿ ƒ……€’Ž€ €‡› „€›• "ADVENTURE" */
+/* INCLUDE-FILE Ð”Ð›Ð¯ Ð“Ð•ÐÐ•Ð ÐÐ¢ÐžÐ Ð Ð‘ÐÐ—Ð« Ð”ÐÐÐÐ«Ð¥ "ADVENTURE" */
 
 #include <stdio.h>
 #include "..\common\advexter.h"

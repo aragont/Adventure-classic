@@ -14,7 +14,7 @@ imessa() {
     while(getlin()) {
         strncpy(buf,_line,3);  sscanf(buf,"%d",&nmes);
         screen(nmes);
-        if(rtext(nmes)!=0)  printf("\nᮮ�饭�� %d 㦥 ��।�����\n",nmes);
+        if(rtext(nmes)!=0)  printf("\nсообщение %d уже определено\n",nmes);
         rtext(nmes)=putmes();
     }
     printf("%8d  %s %6d  %s\n",nmes,"of",ranm,"used");

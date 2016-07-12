@@ -18,7 +18,7 @@ iactio() {
             p=4                                /* read list of words */;
             while(getwrd()) {
                 if( vocab(_word) >= 0 ) {
-                    printf("\n%s%.4s\n","¤¢ ¦¤ë ®¯à¥¤¥«¥­®: ",_word);
+                    printf("\n%s%.4s\n","Ð´Ð²Ð°Ð¶Ð´Ñ‹ Ð¾Ð¿Ñ€ÐµÐ´ÐµÐ»ÐµÐ½Ð¾: ",_word);
                     fatal();
                 }
                 nvoc=nvoc+1;
@@ -30,7 +30,7 @@ iactio() {
             actkey(aw)=putcnd();
 
         } else {
-            printf("\n%s%.10s\n","®è¨¡ª : ",&line(p));  fatal();
+            printf("\n%s%.10s\n","Ð¾ÑˆÐ¸Ð±ÐºÐ°: ",&line(p));  fatal();
         }
 
     }

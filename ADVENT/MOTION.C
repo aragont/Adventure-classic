@@ -1,7 +1,7 @@
 /*d* === motion + action ===           07.01.85   version   13 */
-/* Ø•‡•§¢®¶•≠®Ô ®´® §•©·‚¢®Ô b otbet ha ·´Æ¢† */
-/* inp: verb   - £´†£Æ´ §¢®¶•≠®Ô ®´® §•©·‚¢®Ô */
-/*      object - Æ°'ekt (•·´® het to =0) */
+/* –ø–µ—Ä–µ–¥–≤–∏–∂–µ–Ω–∏—è –∏–ª–∏ –¥–µ–π—Å—Ç–≤–∏—è b otbet ha —Å–ª–æ–≤–∞ */
+/* inp: verb   - –≥–ª–∞–≥–æ–ª –¥–≤–∏–∂–µ–Ω–∏—è –∏–ª–∏ –¥–µ–π—Å—Ç–≤–∏—è */
+/*      object - –æ–±'ekt (–µ—Å–ª–∏ het to =0) */
 
 #include "..\common\advexter.h"
 
@@ -10,7 +10,7 @@ action(verb,object) {
 
     kk=actkey(verb);
     if( kk==0 && verb!=1 )  fatal(102);
-    if( !act(kk,object) )  rspeak(12); /* kak Ø‡®¨•≠®‚Ï ·´Æ¢Æ? */
+    if( !act(kk,object) )  rspeak(12); /* kak –ø—Ä–∏–º–µ–Ω–∏—Ç—å —Å–ª–æ–≤–æ? */
 }
 
 motion(verb) {
@@ -20,9 +20,9 @@ motion(verb) {
     if( kk==0 && loc!=1 )  fatal(103);
     if( !act(kk,verb) ) {
 	if( pct(50) ) {
-	    rspeak(9);                /* Ø„‚® het */
+	    rspeak(9);                /* –ø—É—Ç–∏ het */
 	} else {
-	    rspeak(12);              /* kak Ø‡®¨•≠®‚Ï Ì‚Æ ·´Æ¢Æ ß§•·Ï? */
+	    rspeak(12);              /* kak –ø—Ä–∏–º–µ–Ω–∏—Ç—å —ç—Ç–æ —Å–ª–æ–≤–æ –∑–¥–µ—Å—å? */
 	}
     }
 }

@@ -1,7 +1,7 @@
-/*d* === ‰„≠™Ê®® sostoÔ≠®Ô ===        07.01.85   version   19 */
+/*d* === —Ñ—É–Ω–∫—Ü–∏–∏ sosto—è–Ω–∏—è ===        07.01.85   version   19 */
 
-/* dark()       - b §†≠≠Æ© ‚ÆÁ™• temho */
-/* at(object)   - ß§•·Ï ≠†ÂÆ§®‚·Ô Ì‚Æ‚ Æ°'ekt */
+/* dark()       - b –¥–∞–Ω–Ω–æ–π —Ç–æ—á–∫–µ temho */
+/* at(object)   - –∑–¥–µ—Å—å –Ω–∞—Ö–æ–¥–∏—Ç—Å—è —ç—Ç–æ—Ç –æ–±'ekt */
 
 #include "..\common\advexter.h"
 
@@ -10,7 +10,7 @@ int     darkflag1 = 0;
 dark() {
     static int lamp, light;
 
-    if( lamp== 0 ) {                       /* ®≠®Ê®†´®ß†Ê®Ô */
+    if( lamp== 0 ) {                       /* –∏–Ω–∏—Ü–∏–∞–ª–∏–∑–∞—Ü–∏—è */
 	lamp= ( vocab("lamp")   % 1000 );
 	light=( vocab("!light") % 1000 );
     }

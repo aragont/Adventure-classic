@@ -1,7 +1,7 @@
 /*d* === getans ===        07.01.85   version    9 */
-/* ¢¢Æ§ Æ§≠Æ£Æ ®´® 2-x ·´Æ¢ */
-/* out: word1,word2 - ≠†©§•≠≠Î• ØÆ ·´Æ¢†‡Ó ß≠†Á•≠®Ô ·´Æ¢ */
-/*      type1,type2 - ®Â ‚®ØÎ (-1 - ·´Æ¢† het) */
+/* –≤–≤–æ–¥ –æ–¥–Ω–æ–≥–æ –∏–ª–∏ 2-x —Å–ª–æ–≤ */
+/* out: word1,word2 - –Ω–∞–π–¥–µ–Ω–Ω—ã–µ –ø–æ —Å–ª–æ–≤–∞—Ä—é –∑–Ω–∞—á–µ–Ω–∏—è —Å–ª–æ–≤ */
+/*      type1,type2 - –∏—Ö —Ç–∏–ø—ã (-1 - —Å–ª–æ–≤–∞ het) */
 
 getans(word1,word2,type1,type2)
     int *word1, *word2, *type1, *type2;
@@ -14,7 +14,7 @@ getans(word1,word2,type1,type2)
     for(;;) {
 	inpans(_wrd1,_wrd2);
 	*word1 = *word2 = *type1 = *type2 = -1;
-	if( wrd1(1)=='!' || wrd2(1)=='!' )  goto L100    /* ·Ø•Ê-·´Æ¢† */;
+	if( wrd1(1)=='!' || wrd2(1)=='!' )  goto L100    /* —Å–ø–µ—Ü-—Å–ª–æ–≤–∞ */;
 
 	work=vocab(_wrd1);
 	if( work >= 1 ) {
@@ -28,8 +28,8 @@ getans(word1,word2,type1,type2)
 	    *type2=work/1000;
 	}
 
-    if( *type1>=0 ) break;          /* bce ·´Æ¢† ≠•®ß¢•·‚≠Î */
-	if( wrd1(1)==' ' ) {           /*     ¢ÆÆ°È• het ≠® Æ§≠Æ£Æ */
+    if( *type1>=0 ) break;          /* bce —Å–ª–æ–≤–∞ –Ω–µ–∏–∑–≤–µ—Å—Ç–Ω—ã */
+	if( wrd1(1)==' ' ) {           /*     –≤–æ–æ–±—â–µ het –Ω–∏ –æ–¥–Ω–æ–≥–æ */
 	    kk=61;
 	} else {
 L100:       kk=60;

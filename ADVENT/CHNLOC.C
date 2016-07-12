@@ -1,5 +1,5 @@
 /*d* === chnloc ===        07.01.85   version    9 */
-/* ®ß¨•≠•≠®• ØÆß®Ê®® ha ØÆß®Ê®Ó #newloc */
+/* –∏–∑–º–µ–Ω–µ–Ω–∏–µ –ø–æ–∑–∏—Ü–∏–∏ ha –ø–æ–∑–∏—Ü–∏—é #newloc */
 
 #include "..\common\advexter.h"
 
@@ -10,7 +10,7 @@ chnloc(newloc) {
     drkold=dark();
     loc=newloc;
     if( dark() && drkfla && drkold && pct(30) ) {
-	rspeak(23);                   /* ·¢†´®´·Ô b ™Æ´Æ§•Ê b temhote */
+	rspeak(23);                   /* —Å–≤–∞–ª–∏–ª—Å—è b –∫–æ–ª–æ–¥–µ—Ü b temhote */
 	score();
 	exit(0);
     }

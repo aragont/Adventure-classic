@@ -2,8 +2,8 @@
 
 /* - parameters --- current limits: */
 
-                        /* === 5ƒ‹…5ε ‹γγ• === */
-#define vocw 550        /* 5ƒ‹…5 γ5© */
+                        /* === 5Π®Π“Π›Π•5Ρ… Π›Π®ΡƒΡƒΠ¥Π‘ΠΠ‘ === */
+#define vocw 550        /* 5Π®Π“Π›Π•5 ΡƒΠΠΠ‘Π®5ΠΉ */
 #define loct 254        /* locations */
 #define objt 127        /* objects */
 #define fixt 200        /* locations for fixed objects */
@@ -12,11 +12,11 @@
 #define ranm 400        /* random messages */
 #define plcl 12         /* different player classifications. */
 
-                        /* === ξ•ε γ === */
-#define movewr 0        /* 5…•… „•”…•© */
-#define objcwr 1        /* €'ekt */
-#define actnwr 2        /* „…γξ•… c €'ektom */
-#define specwr 3        /* γ…6-γ */
+                        /* === ΡΠ¥ΠΡ… ΡƒΠΠΠ‘ === */
+#define movewr 0        /* ΠΠ®Π5Π®Π‘ΠΠ•ΠΠ¥Π• Π”Π‘Π¥Π¤Π•ΠΠ¥ΠΉ */
+#define objcwr 1        /* ΠΠ'ekt */
+#define actnwr 2        /* Π”Π•ΠΡƒΡΠ‘Π¥Π• c ΠΠ'ektom */
+#define specwr 3        /* ΡƒΠΠ•6-ΡƒΠΠΠ‘Π */
 
 
 /* there are also limits which cannot be exceeded due to the structure */
@@ -29,55 +29,55 @@
 
 
 /* --- messages --- */
-extern int  abb;                      /* ΅–:  ” • … •γ•… */
-extern unsigned  _rtext[ranm];        /* „5…γ 5ƒεζ γ€ª…• */
+extern int  abb;                      /* Π±ΠΠ®Π¦: ΠΠ°Π¤ΠΠ ΠΠ¥ ΠΠΠΠΠΠ• ΠΠΠ¥ΡƒΠ®ΠΠ¥Π• */
+extern unsigned  _rtext[ranm];        /* Π®Π”5Π•ΡƒΠ® 5Π®Π“ΠΡ…Ρ† ΡƒΠΠΠΠΊΠ•ΠΠ¥Π */
 #define    rtext(x) _rtext[(x)-1]
-extern unsigned  _ltext[loct];        /* - " -  „•εζ •γ• ƒ•6•• */
+extern unsigned  _ltext[loct];        /* - " -  Π”ΠΠ¥ΠΠΡ…Ρ† ΠΠΠ¥ΡƒΠ®ΠΠ¥Π ΠΠΠ“Π¥6Π¥Π¥ */
 #define    ltext(x) _ltext[(x)-1]
-extern unsigned  _stext[loct];        /* - " -  ‰5ξ‰•ζ •γ• ƒ•6••*/
+extern unsigned  _stext[loct];        /* - " -  Π™Π5ΠΡΠ™Π¥Ρ† ΠΠΠ¥ΡƒΠ®ΠΠ¥Π ΠΠΠ“Π¥6Π¥Π¥*/
 #define    stext(x) _stext[(x)-1]
-extern unsigned  _ctext[plcl];        /* - " -  ‰•΅•‰6• •–5‰ */
+extern unsigned  _ctext[plcl];        /* - " -  Π™Π‘Π®ΠΠ¥Π±Π¥Π™Π®6Π¥Π Π¥Π¦5ΠΠ™Π® */
 #define    ctext(x) _ctext[(x)-1]
-extern unsigned  _cval[plcl];         /* 5–• ‰•΅•‰6•• •–5‰ */
+extern unsigned  _cval[plcl];         /* ΠΠ5ΠΠ¦Π¥ Π™Π‘Π®ΠΠ¥Π±Π¥Π™Π®6Π¥Π¥ Π¥Π¦5ΠΠ™Π® */
 #define    cval(x) _cval[(x)-1]
-extern unsigned  _ptext[objt];        /* •„…‰γε γ€ª. o γγξ.€'ektob*/
+extern unsigned  _ptext[objt];        /* Π¥ΠΠ”Π•Π™ΡƒΡ… ΡƒΠΠΠΠΊ. o ΡƒΠ‘ΠΠΡƒΡ.ΠΠ'ektob*/
 #define    ptext(x) _ptext[(x)-1]
-extern unsigned  _pstat[sttt];        /* •„…‰γε γ€ª. o γγξ.€'ektob*/
+extern unsigned  _pstat[sttt];        /* Π¥ΠΠ”Π•Π™ΡƒΡ… ΡƒΠΠΠΠΊ. o ΡƒΠ‘ΠΠΡƒΡ.ΠΠ'ektob*/
 #define    pstat(x) _pstat[(x)-1]
-extern char _abrev[loct];             /* ΅–•: „ γ‰5ª…… •γ•…*/
+extern char _abrev[loct];             /* Π±ΠΠ®Π¦Π¥: ΠΠ®Π”Π ΡƒΠΠ™5Π®ΠΊΠ•ΠΠΠΠ• ΠΠΠ¥ΡƒΠ®ΠΠ¥Π•*/
 #define    abrev(x) _abrev[(x)-1]
 
 
 /* --- travels + actions --- */
-extern unsigned  _trvkey[loct];       /* ξ€•6 2 –5΅ „ ƒ. */
+extern unsigned  _trvkey[loct];       /* ΡΠ®ΠΠΠ¥6Π® ΠΠ®2Π®ΠΠ® Π¦5Π®Π±Π® Π”Π®ΠΠΠΠ ΠΠΠ“. */
 #define    trvkey(x) _trvkey[(x)-1]
-extern unsigned  _actkey[actw];       /*  -"-    -"-  5…‰6•• ha „…γξ•… */
+extern unsigned  _actkey[actw];       /*  -"-    -"-  5Π•Π®Π™6Π¥Π¥ ha Π”Π•ΠΡƒΡΠ‘Π¥Π• */
 #define    actkey(x) _actkey[(x)-1]
 
 
 /* --- vocabulary --- */
-extern int  nvoc;                     /* 2•γ γ b γ5… */
-extern int  _ktab[vocw];              /* 2•γ - ƒ2…•© γ */
+extern int  nvoc;                     /* 2Π¥ΡƒΠΠ ΡƒΠΠΠ‘ b ΡƒΠΠΠ‘Π®5Π• */
+extern int  _ktab[vocw];              /* 2Π¥ΡƒΠΠ® - Π“ΠΠ®2Π•ΠΠ¥ΠΉ ΡƒΠΠΠ‘ */
 #define    ktab(x) _ktab[(x)-1]
-extern long _atab[vocw];              /* γ -  4 € ‰ε */
+extern long _atab[vocw];              /* ΡƒΠΠΠ‘Π® - ΠΠ 4 ΠΠ°Π™Π‘Ρ… */
 #define    atab(x) _atab[(x)-1]
 
 /* --- state --- */
-#define inipro  255           /* 2¬. γγξ©•… „© γ‰5•ª */
-#define nulobj  255           /* ξγ ξγξ £ª• €"ekt */
-#define caried  1000          /* mapkep - €'ekt …γ ξ */
+#define inipro  255           /* ΠΠ®2Π®ΠΠΌ. ΡƒΠΡƒΡΠΠΉΠΠ¥Π• Π”ΠΠΉ ΡƒΠΠ™5ΠΠ‘Π¥ΠΊ */
+#define nulobj  255           /* ΠΡΡƒΠ°ΡΡƒΡΠ‘Π°Π³ΠΊΠ¥Π ΠΠ"ekt */
+#define caried  1000          /* mapkep - ΠΠ'ekt ΠΠ•ΡƒΠ°Ρ */
 
 extern int  rndini;
-extern int  loc;                      /* ξ…‰ ª© ƒ•6•© */
-extern int  tally;                    /* 2•γ …ª… … €5 ”. γ‰5•ª */
-extern int  treasr;                   /* homep 1-– €'ekta-γ‰5•ª */
-extern int  rndini;                   /* γ 2.2•γ „ 5ξ•• */
-extern unsigned  tevent;              /*  ‰ƒξ…¬ ξ€•6ε γ 2.γ€εξ• */
-extern unsigned  eevent;              /* ‰…6 ξ€•6ε γ 2εζ γ€εξ• */
-extern unsigned  tiniti;              /* -"-  -"- ••6••ƒ6•• */
-extern int  _place[loct];             /* ƒ•6•© €7…‰ξ •• -[•„…‰γ] */
+extern int  loc;                      /* ΡΠ•Π™Π°ΠΊΠ®ΠΉ ΠΠΠ“Π¥6Π¥ΠΉ */
+extern int  tally;                    /* 2Π¥ΡƒΠΠ Π•ΠΊΠ• ΠΠ• ΠΠΠΠ®5Π°Π¤. ΡƒΠΠ™5ΠΠ‘Π¥ΠΊ */
+extern int  treasr;                   /* homep 1-ΠΠ¦Π ΠΠ'ekta-ΡƒΠΠ™5ΠΠ‘Π¥ΠΊΠ® */
+extern int  rndini;                   /* ΡƒΠΠ°2.2Π¥ΡƒΠΠ Π”Π®ΠΠΠΠ ΠΠ®5ΡΠ¥Π¥ */
+extern unsigned  tevent;              /* Π°Π™Π®Π“Π®ΡΠ•ΠΠΌ ΡΠ®ΠΠΠ¥6Ρ… ΡƒΠΠ°2.ΡƒΠΠΡ…ΡΠ¥Π */
+extern unsigned  eevent;              /* Π™ΠΠΠ•6 ΡΠ®ΠΠΠ¥6Ρ… ΡƒΠΠ°2Π®ΠΠΡ…Ρ† ΡƒΠΠΡ…ΡΠ¥Π */
+extern unsigned  tiniti;              /* -"-  -"- Π¥ΠΠ¥6Π¥Π®ΠΠ¥Π“Π®6Π¥Π¥ */
+extern int  _place[loct];             /* ΠΠΠ“Π¥6Π¥ΠΉ ΠΠ7Π•Π™ΡΠ® Π¥ΠΠ¥ -[Π¥ΠΠ”Π•Π™Ρƒ] */
 #define    place(x) _place[(x)-1]
-extern char _fixed[fixt];             /*    „© ΅•‰γ•5εζ €'ektob */
+extern char _fixed[fixt];             /*    Π”ΠΠΉ Π±Π¥Π™ΡƒΠ¥5ΠΠ‘Π®ΠΠΡ…Ρ† ΠΠ'ektob */
 #define    fixed(x) _fixed[(x)-1]
-extern char _prop[objt];              /* γγξ €'ekt */
+extern char _prop[objt];              /* ΡƒΠ‘ΠΠΡƒΡΠ‘Π ΠΠ'ektΠ® */
 #define    prop(x) _prop[(x)-1]

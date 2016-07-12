@@ -1,8 +1,8 @@
 /* === vocab === 08.08.84 version 2 */
 /*  look up 'word' in the vocabulary ('atab' real array) */
 /*  and return its "definition" (ktab), or -1 if not found */
-/* out: vocab=-1  - ·´Æ¢Æ he ≠†©§•≠Æ */
-/*      vocab     - ™Æ§ ·´Æ¢† */
+/* out: vocab=-1  - —Å–ª–æ–≤–æ he –Ω–∞–π–¥–µ–Ω–æ */
+/*      vocab     - –∫–æ–¥ —Å–ª–æ–≤–∞ */
 
 #include "advexter.h"
 

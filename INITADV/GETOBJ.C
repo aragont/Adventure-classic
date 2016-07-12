@@ -13,7 +13,7 @@ int  getobj() {
     int _getobj;
 
     if( getwrd() ) {
-	if( word(1)>='0' && word(1)<='9' ) {      /* �᫮ */
+	if( word(1)>='0' && word(1)<='9' ) {      /* число */
 	    strncpy(buf,_word,4);  sscanf(buf,"%d",&_getobj);
 	} else if(word(1)=='*') {                       /* **** */
 	    _getobj=255;

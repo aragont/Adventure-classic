@@ -1,4 +1,4 @@
-/*d* === score === �뤠� ��� ����        07.01.85   version    9 */
+/*d* === score === выдача счета игры        07.01.85   version    9 */
 
 #include "..\common\advexter.h"
 
@@ -9,9 +9,9 @@ score() {
     for(obj=treasr; obj<=objt; ++obj) {
 	if( place(obj)>0 ) {
 	    maxsco=maxsco+20;
-	    if( place(obj)==3 && prop(obj)==0 ) {    /* ᮪஢�� b ���� */
+	    if( place(obj)==3 && prop(obj)==0 ) {    /* сокровище b доме */
 		scor=scor+20;
-	    } else if( (prop(obj)&0377)!=inipro ) {   /* ᮪஢�� ����� */
+	    } else if( (prop(obj)&0377)!=inipro ) {   /* сокровище видел */
 		scor=scor+5;
 	    }
 	}

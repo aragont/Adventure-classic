@@ -1,10 +1,10 @@
 /* = common blocks for adventure === include file === */
-/* Љ® ¬­Ґ нв®в д ©« Ї®Ї « б Ї®¬®а®зҐ­­л¬Ё Є®¬¬Ґ­в аЁп¬Ё. ‘.‹. */
+/* РљРѕ РјРЅРµ СЌС‚РѕС‚ С„Р°Р№Р» РїРѕРїР°Р» СЃ РїРѕРјРѕСЂРѕС‡РµРЅРЅС‹РјРё РєРѕРјРјРµРЅС‚Р°СЂРёСЏРјРё. РЎ.Р›. */
 
 /* - parameters --- current limits: */
 
-                        /* === 5ћѓ‹…5е ‹ћгг•ЃЌЃ === */
-#define vocw 550        /* 5ћѓ‹…5 гЉЌЃћ5© */
+                        /* === 5Р®Р“Р›Р•5С… Р›Р®СѓСѓРҐР‘РќР‘ === */
+#define vocw 550        /* 5Р®Р“Р›Р•5 СѓРљРќР‘Р®5Р№ */
 #define loct 254        /* locations */
 #define objt 127        /* objects */
 #define fixt 200        /* locations for fixed objects */
@@ -13,11 +13,11 @@
 #define ranm 400        /* random messages */
 #define plcl 12         /* different player classifications. */
 
-                        /* === о•Ће гЉЌЃ === */
-#define movewr 0        /* ЊћЋ5ћЃЉ…Њ•… „Ѓ•”…Њ•© */
-#define objcwr 1        /* ЌЂ'ekt */
-#define actnwr 2        /* „…€гоЃ•… c ЌЂ'ektom */
-#define specwr 3        /* гЋ…6-гЉЌЃЌ */
+                        /* === СЋРҐРћС… СѓРљРќР‘ === */
+#define movewr 0        /* РњР®Рћ5Р®Р‘РљР•РњРҐР• Р”Р‘РҐР¤Р•РњРҐР№ */
+#define objcwr 1        /* РќРђ'ekt */
+#define actnwr 2        /* Р”Р•РСѓСЋР‘РҐР• c РќРђ'ektom */
+#define specwr 3        /* СѓРћР•6-СѓРљРќР‘Рќ */
 
 
 /* there are also limits which cannot be exceeded due to the structure */
@@ -30,55 +30,55 @@
 
 
 /* --- messages --- */
-int  abb;                      /* ЎЉћ–: Њ ”ЊЌ Љ• ЋЌЉЊЌ… ЌЋ•гћЊ•… */
-unsigned  _rtext[ranm];        /* ћ„5…гћ 5ћѓЊеж гЌЌЂЄ…Њ•€ */
+int  abb;                      /* Р±РљР®Р¦: РњР°Р¤РњРќ РљРҐ РћРќРљРњРќР• РќРћРҐСѓР®РњРҐР• */
+unsigned  _rtext[ranm];        /* Р®Р”5Р•СѓР® 5Р®Р“РњС…С† СѓРќРќРђРєР•РњРҐР */
 #define    rtext(x) _rtext[(x)-1]
-unsigned  _ltext[loct];        /* - " -  „Љ•ЊЊеж ЌЋ•гћЊ•€ ЋЌѓ•6•• */
+unsigned  _ltext[loct];        /* - " -  Р”РљРҐРњРњС…С† РќРћРҐСѓР®РњРҐР РћРќР“РҐ6РҐРҐ */
 #define    ltext(x) _ltext[(x)-1]
-unsigned  _stext[loct];        /* - " -  ‰Ќ5Ќо‰•ж ЌЋ•гћЊ•€ ЋЌѓ•6••*/
+unsigned  _stext[loct];        /* - " -  Р™Рќ5РќСЋР™РҐС† РќРћРҐСѓР®РњРҐР РћРќР“РҐ6РҐРҐ*/
 #define    stext(x) _stext[(x)-1]
-unsigned  _ctext[plcl];        /* - " -  ‰ЃћЉ•Ў•‰ћ6•€ •–5Ќ‰ћ */
+unsigned  _ctext[plcl];        /* - " -  Р™Р‘Р®РљРҐР±РҐР™Р®6РҐР РҐР¦5РќР™Р® */
 #define    ctext(x) _ctext[(x)-1]
-unsigned  _cval[plcl];         /* ЋЌ5Ќ–• ‰ЃћЉ•Ў•‰ћ6•• •–5Ќ‰ћ */
+unsigned  _cval[plcl];         /* РћРќ5РќР¦РҐ Р™Р‘Р®РљРҐР±РҐР™Р®6РҐРҐ РҐР¦5РќР™Р® */
 #define    cval(x) _cval[(x)-1]
-unsigned  _ptext[objt];        /* •Њ„…‰ге гЌЌЂЄ. o гЃЌ€го.ЌЂ'ektob*/
+unsigned  _ptext[objt];        /* РҐРњР”Р•Р™СѓС… СѓРќРќРђРє. o СѓР‘РќРСѓСЋ.РќРђ'ektob*/
 #define    ptext(x) _ptext[(x)-1]
-unsigned  _pstat[sttt];        /* •Њ„…‰ге гЌЌЂЄ. o гЃЌ€го.ЌЂ'ektob*/
+unsigned  _pstat[sttt];        /* РҐРњР”Р•Р™СѓС… СѓРќРќРђРє. o СѓР‘РќРСѓСЋ.РќРђ'ektob*/
 #define    pstat(x) _pstat[(x)-1]
-char _abrev[loct];             /* ЎЉћ–•: Њћ„Ќ гЌ‰5ћЄ…ЊЊЌ… ЌЋ•гћЊ•…*/
+char _abrev[loct];             /* Р±РљР®Р¦РҐ: РњР®Р”Рќ СѓРќР™5Р®РєР•РњРњРќР• РќРћРҐСѓР®РњРҐР•*/
 #define    abrev(x) _abrev[(x)-1]
 
 
 /* --- travels + actions --- */
-unsigned  _trvkey[loct];       /* оћЂЉ•6ћ Њћ2ћЉћ –5ћЎћ „ћЊЊЌ€ ЋЌѓ. */
+unsigned  _trvkey[loct];       /* СЋР®РђРљРҐ6Р® РњР®2Р®РљР® Р¦5Р®Р±Р® Р”Р®РњРњРќР РћРќР“. */
 #define    trvkey(x) _trvkey[(x)-1]
-unsigned  _actkey[actw];       /*  -"-    -"-  5…ћ‰6•• ha „…€гоЃ•… */
+unsigned  _actkey[actw];       /*  -"-    -"-  5Р•Р®Р™6РҐРҐ ha Р”Р•РСѓСЋР‘РҐР• */
 #define    actkey(x) _actkey[(x)-1]
 
 
 /* --- vocabulary --- */
-int  nvoc;                     /* 2•гЉЌ гЉЌЃ b гЉЌЃћ5… */
-int  _ktab[vocw];              /* 2•гЉћ - ѓЊћ2…Њ•© гЉЌЃ */
+int  nvoc;                     /* 2РҐСѓРљРќ СѓРљРќР‘ b СѓРљРќР‘Р®5Р• */
+int  _ktab[vocw];              /* 2РҐСѓРљР® - Р“РњР®2Р•РњРҐР№ СѓРљРќР‘ */
 #define    ktab(x) _ktab[(x)-1]
-long _atab[vocw];              /* гЉЌЃћ - ЋЌ 4 Ђ ‰Ѓе */
+long _atab[vocw];              /* СѓРљРќР‘Р® - РћРќ 4 РђР°Р™Р‘С… */
 #define    atab(x) _atab[(x)-1]
 
 /* --- state --- */
-#define inipro  255           /* Њћ2ћЉ¬. гЌгоЌ©Њ•… „Љ© гЌ‰5ЌЃ•Є */
-#define nulobj  255           /* Ќог огоЃ ЈЄ•€ ЌЂ"ekt */
-#define caried  1000          /* mapkep - ЌЂ'ekt Њ…г о */
+#define inipro  255           /* РњР®2Р®РљРј. СѓРќСѓСЋРќР№РњРҐР• Р”РљР№ СѓРќР™5РќР‘РҐРє */
+#define nulobj  255           /* РќСЋСѓР°СЋСѓСЋР‘Р°РіРєРҐР РќРђ"ekt */
+#define caried  1000          /* mapkep - РќРђ'ekt РњР•СѓР°СЋ */
 
 int  rndini;
-int  loc;                      /* о…‰ Єћ© ЋЌѓ•6•© */
-int  tally;                    /* 2•гЉЌ …Є… Њ… ЌЂЊћ5 ”. гЌ‰5ЌЃ•Є */
-int  treasr;                   /* homep 1-Ќ–Ќ ЌЂ'ekta-гЌ‰5ЌЃ•Єћ */
-int  rndini;                   /* гЉ 2.2•гЉЌ „ћЊЊЌ€ Ћћ5о•• */
-unsigned  tevent;              /*  ‰ћѓћо…Љ¬ оћЂЉ•6е гЉ 2.гЌЂео•€ */
-unsigned  eevent;              /* ‰ЌЊ…6 оћЂЉ•6е гЉ 2ћ€Њеж гЌЂео•€ */
-unsigned  tiniti;              /* -"-  -"- •Њ•6•ћЉ•ѓћ6•• */
-int  _place[loct];             /* ЋЌѓ•6•© ЌЂ7…‰оћ •Љ• -[•Њ„…‰г] */
+int  loc;                      /* СЋР•Р™Р°РєР®Р№ РћРќР“РҐ6РҐР№ */
+int  tally;                    /* 2РҐСѓРљРќ Р•РєР• РњР• РќРђРњР®5Р°Р¤. СѓРќР™5РќР‘РҐРє */
+int  treasr;                   /* homep 1-РќР¦Рќ РќРђ'ekta-СѓРќР™5РќР‘РҐРєР® */
+int  rndini;                   /* СѓРљР°2.2РҐСѓРљРќ Р”Р®РњРњРќР РћР®5СЋРҐРҐ */
+unsigned  tevent;              /* Р°Р™Р®Р“Р®СЋР•РљРј СЋР®РђРљРҐ6С… СѓРљР°2.СѓРќРђС…СЋРҐР */
+unsigned  eevent;              /* Р™РќРњР•6 СЋР®РђРљРҐ6С… СѓРљР°2Р®РРњС…С† СѓРќРђС…СЋРҐР */
+unsigned  tiniti;              /* -"-  -"- РҐРњРҐ6РҐР®РљРҐР“Р®6РҐРҐ */
+int  _place[loct];             /* РћРќР“РҐ6РҐР№ РќРђ7Р•Р™СЋР® РҐРљРҐ -[РҐРњР”Р•Р™Сѓ] */
 #define    place(x) _place[(x)-1]
-char _fixed[fixt];             /*    „Љ© Ў•‰г•5ЌЃћЊЊеж ЌЂ'ektob */
+char _fixed[fixt];             /*    Р”РљР№ Р±РҐР™СѓРҐ5РќР‘Р®РњРњС…С† РќРђ'ektob */
 #define    fixed(x) _fixed[(x)-1]
-char _prop[objt];              /* гЃЌ€гоЃЌ ЌЂ'ektћ */
+char _prop[objt];              /* СѓР‘РќРСѓСЋР‘Рќ РќРђ'ektР® */
 #define    prop(x) _prop[(x)-1]

@@ -13,14 +13,14 @@ indobj() {
 		kk=pstat(ptext(obj)+kk+1);
 		p=place(obj);
 
-		if( p == loc ) {                 /* ØÆ§¢®¶≠Î© Æ°"ekt */
-		    if( (prop(obj)&0377) == inipro ) { /* ¢Ø•‡¢Î• „¢®§•´ */
-			prop(obj)=0     /*        ·Æ™‡Æ¢®È• */;
+		if( p == loc ) {                 /* –ø–æ–¥–≤–∏–∂–Ω—ã–π –æ–±"ekt */
+		    if( (prop(obj)&0377) == inipro ) { /* –≤–ø–µ—Ä–≤—ã–µ —É–≤–∏–¥–µ–ª */
+			prop(obj)=0     /*        —Å–æ–∫—Ä–æ–≤–∏—â–µ */;
 			tally=tally-1;
 		    }
 		    mes(kk);
 
-		} else if( p < 0 ) {                      /* ≠• -"- -"- */
+		} else if( p < 0 ) {                      /* –Ω–µ -"- -"- */
 		    p = -p;
 		    while(fixed(p)!=0) {
 			if((fixed(p)&0377)==loc)  mes(kk);

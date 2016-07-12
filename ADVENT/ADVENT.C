@@ -11,24 +11,24 @@ main() {
     ini();                                /* initiate data base */
 
     for(;;) {
-        events();                          /* ·´„Á†©≠Î• ·Æ°Î‚®Ô */
+        events();                          /* —Å–ª—É—á–∞–π–Ω—ã–µ —Å–æ–±—ã—Ç–∏—è */
         getans(&word1,&word2,&type1,&type2);
         ++moves;
         oldob=0;
 
-        if(        type1 == specwr ) {      /* ·Ø•Ê-·´Æ¢Æ */
+        if(        type1 == specwr ) {      /* —Å–ø–µ—Ü-—Å–ª–æ–≤–æ */
             rspeak(word1);
         } else if( type2 == specwr ) {
             rspeak(word2);
 
-        } else if( type1 == movewr ) {      /* Ø•‡•§¢®¶•≠®Ô */
+        } else if( type1 == movewr ) {      /* –ø–µ—Ä–µ–¥–≤–∏–∂–µ–Ω–∏—è */
             motion(word1);
 
         } else if( type2 == movewr ) {
             motion(word2);
         } else {
 
-            if( type1 == objcwr ) {            /* Æ°"ekta het ‡Ô§Æ¨ */
+            if( type1 == objcwr ) {            /* –æ–±"ekta het —Ä—è–¥–æ–º */
                 if( !here(word1) )  goto L10;
             }
             if( type2 == objcwr ) {
@@ -38,19 +38,19 @@ L10   :             rspeak(203);
                 }
             }
 
-            if( type1 == actnwr ) {           /* §•©·‚¢®• + */
-                if( type2 == objcwr ) {         /*     + Æ°"ekt */
+            if( type1 == actnwr ) {           /* –¥–µ–π—Å—Ç–≤–∏–µ + */
+                if( type2 == objcwr ) {         /*     + –æ–±"ekt */
                     action(word1,word2);
-                } else if( oldobj != 0 ) {        /*     + ·‚†‡Î© Æ°"ekt */
+                } else if( oldobj != 0 ) {        /*     + —Å—Ç–∞—Ä—ã–π –æ–±"ekt */
                     action(word1,oldobj);
-                } else {                          /*     + het Æ°"ekta */
+                } else {                          /*     + het –æ–±"ekta */
                     action(word1,255);
                 }
-            } else if( type2 == actnwr ) {      /* Æ°"ekt + §•©·‚¢®• */
+            } else if( type2 == actnwr ) {      /* –æ–±"ekt + –¥–µ–π—Å—Ç–≤–∏–µ */
                 action(word2,word1);
 
-            } else if( type1 == objcwr ) {      /* Æ°"ekt */
-                rspeak(90);                     /*    Á‚Æ §•´†‚Ï c ? */
+            } else if( type1 == objcwr ) {      /* –æ–±"ekt */
+                rspeak(90);                     /*    —á—Ç–æ –¥–µ–ª–∞—Ç—å c ? */
                 oldob=word1;
             }
 L20:;

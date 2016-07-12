@@ -1,4 +1,4 @@
-/* ¢¢Æ§ 2-Â ·´Æ¢ ®ß Æ‚¢•‚† Á•´Æ¢•™†
+/* –≤–≤–æ–¥ 2-—Ö —Å–ª–æ–≤ –∏–∑ –æ—Ç–≤–µ—Ç–∞ —á–µ–ª–æ–≤–µ–∫–∞
    char wrd1[10], wrd2[10];  inpans(&wrd1, &wrd2);  */
 
 inpans( wrd1, wrd2 )
@@ -10,7 +10,7 @@ inpans( wrd1, wrd2 )
 
     for(i=10; i--; ) wrd1[i] = wrd2[i] = ' ';
     buf[80-1] = '\n';
-    if( !read(0, buf, 80-1) )  strcpy( buf, "™Æ≠•Ê\n");
+    if( !read(0, buf, 80-1) )  strcpy( buf, "–∫–æ–Ω–µ—Ü\n");
     tolower( buf, 80 );
     for( ptr=buf; *ptr==' ' || *ptr=='\t'; ++ptr) ;
     if( *ptr != '\n' ) {
