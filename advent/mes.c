@@ -1,12 +1,12 @@
 /* вывод сообщения по заданному адресу */
 
-#include "..\common\advexter.h"
+#include "../common/advexter.h"
 
 #define blksiz    512
 #define mask      (~(blksiz-1l))
 
 #define adv_text  "text.adv"
-#define adv_text2 "\advent\text.dat"
+#define adv_text2 "advent/text.dat"
 #define empty     '>'
 
 mes(iadr)

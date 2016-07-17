@@ -1,7 +1,7 @@
 /*d* === freeze ===             19.01.85   version    9 */
 /* freeze game into file 'frozen.adv' */
 
-#include "..\common\advexter.h"
+#include "../common/advexter.h"
 #include <stdio.h>
 
 extern FILE *F1;
