@@ -20,4 +20,3 @@ vocab(word)
     }
     return( -1 );
 }
-
