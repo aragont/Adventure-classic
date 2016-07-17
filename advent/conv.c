@@ -24,4 +24,3 @@ char *conv (value, length, radix, begins)
 
     return(&buf[16-length]);
 }
-

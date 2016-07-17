@@ -7,4 +7,3 @@ fatal(n)
     write(1, "\n", 1);
     exit(1);
 }
-

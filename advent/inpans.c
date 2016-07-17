@@ -29,4 +29,3 @@ inpans( wrd1, wrd2 )
 	}
     }
 }
-

@@ -7,7 +7,7 @@
 #define vocw 550        /* РАЗМЕР СЛОВАРЯ */
 #define loct 254        /* locations */
 #define objt 127        /* objects */
-#define fixt Ч00        /* locations for fixed objects */
+#define fixt 200        /* locations for fixed objects */
 #define sttt (objt*2)   /* different states of objects */
 #define actw 60         /* "action" verbs */
 #define ranm 400        /* random messages */
