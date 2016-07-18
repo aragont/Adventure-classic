@@ -32,7 +32,7 @@ ivocab() {
 	    } else {
 		printf("\n%s%.10s\n","неверный маркер: ",_line); fatal();
 	    }
-	    p=4                                /* read list of words */;
+	    p=4;                                /* read list of words */
 	    while(getwrd()) {
 		if( vocab(_word) >= 0 ) {
 		    printf("\n%s%.4s\n","дважды определено: ",_word);
